@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentManagement</title>
+    <style>
+       
+        body{
+            background-image: url('bg5.jpg');
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .form{
+            display:flex;
+            flex-direction: column;
+            border: 7px solid black;
+            margin: 80px 450px;
+            border-radius:15px ;
+            background-color: white;
+            border-style:inset;
+
+        }
+        .element{
+            margin: 20px 40px;
+            
+            
+        }
+        #name , #mail {
+            width:300px;
+        }
+        #image{
+            border:1px solid black;
+            position: relative;
+            width:500px;
+            padding:10px;
+            box-sizing: border-box;
+            left:50px;
+            cursor: pointer;
+        }
+        #video{
+            border:1px solid black;
+            position: relative;
+            width:480px;
+            padding:10px;
+            
+            left:40px;
+            margin:10px;
+            cursor: pointer;
+        }
+        #submit{
+            width:80px;
+            height: 40px;
+            margin: 10px;
+            position: relative;
+            left:250px;
+            cursor: pointer;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Content Management Tool</h1>
+    <form action="#" class="form">
+       <label for="name" class="element">
+        Enter Name:<input type="text" id="name" placeholder="enter name">
+       </label>
+       <label for="mail" class="element">
+        Enter Mail: <input type="email" id="mail" placeholder="enter mail">
+       </label><br>
+       <label for="textarea" class="element">
+
+           Enter Content:<textarea  id="textarea" cols="15" rows="3" placeholder="enter content"></textarea>
+       </label>
+       <label for="image" class="element">
+        Image:
+       </label>
+       <input type="file" id="image">
+       <label for="video" class="element">
+        Video: 
+       </label>
+       <input type="file" id="video">
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
